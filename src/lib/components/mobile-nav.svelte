@@ -26,37 +26,25 @@
 			<nav class="flex flex-col items-start gap-y-4 font-medium">
 				<a
 					href="#about"
-					class={cn(
-						'transition-colors hover:text-foreground/80',
-						false ? 'text-foreground' : 'text-foreground/60'
-					)}
+					class={cn('text-foreground/60 transition-colors hover:text-foreground/80')}
 				>
 					About
 				</a>
 				<a
 					href="#about"
-					class={cn(
-						'transition-colors hover:text-foreground/80',
-						false ? 'text-foreground' : 'text-foreground/60'
-					)}
+					class={cn('text-foreground/60 transition-colors hover:text-foreground/80')}
 				>
 					Features
 				</a>
 				<a
 					href="#about"
-					class={cn(
-						'transition-colors hover:text-foreground/80',
-						false ? 'text-foreground' : 'text-foreground/60'
-					)}
+					class={cn('text-foreground/60 transition-colors hover:text-foreground/80')}
 				>
 					Roadmap
 				</a>
 				<a
 					href="#about"
-					class={cn(
-						'transition-colors hover:text-foreground/80',
-						false ? 'text-foreground' : 'text-foreground/60'
-					)}
+					class={cn('text-foreground/60 transition-colors hover:text-foreground/80')}
 				>
 					Contacts
 				</a>
