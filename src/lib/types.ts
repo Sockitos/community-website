@@ -1,13 +1,12 @@
 export type Feature = {
-	icon: string;
-	name: string;
+	title: string;
 	description: string;
-	screenshots: string[];
+	screenshot: string;
 };
 
 export type PlannedFeature = {
 	title: string;
 	description: string;
-	status: 'in_progress' | 'completed' | 'planned';
+	status: 'In Progress' | 'Completed' | 'Planned';
 	eta: string;
 };

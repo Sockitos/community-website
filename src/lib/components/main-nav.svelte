@@ -9,27 +9,27 @@
 			'transition-colors hover:text-foreground/80',
 			$page.url.pathname.startsWith('/about') ? 'text-foreground' : 'text-foreground/60'
 		)}
-		href="/">About</a
+		href="#about">About</a
 	>
 	<a
 		class={cn(
 			'transition-colors hover:text-foreground/80',
 			$page.url.pathname.startsWith('/features') ? 'text-foreground' : 'text-foreground/60'
 		)}
-		href="/">Features</a
+		href="#features">Features</a
 	>
 	<a
 		class={cn(
 			'transition-colors hover:text-foreground/80',
 			$page.url.pathname.startsWith('/roadmap') ? 'text-foreground' : 'text-foreground/60'
 		)}
-		href="/">Roadmap</a
+		href="#roadmap">Roadmap</a
 	>
 	<a
 		class={cn(
 			'transition-colors hover:text-foreground/80',
 			$page.url.pathname.startsWith('/contact') ? 'text-foreground' : 'text-foreground/60'
 		)}
-		href="/">Contact</a
+		href="#contact">Contact</a
 	>
 </nav>

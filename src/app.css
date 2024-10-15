@@ -70,6 +70,8 @@
 
 @layer base {
 	* {
+		scroll-behavior: smooth;
+		scroll-padding-top: 3.5rem;
 		@apply border-border;
 	}
 	body {
