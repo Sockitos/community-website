@@ -24,6 +24,16 @@ export default tseslint.config(
 			parserOptions: {
 				parser: tseslint.parser
 			}
+		},
+		rules: {
+			'@typescript-eslint/no-unused-vars': [
+				'error',
+				{
+					args: 'after-used',
+					argsIgnorePattern: '^_',
+					varsIgnorePattern: '^_|\\$\\$(Props|Events|Slots|Generic)$'
+				}
+			]
 		}
 	},
 	{
