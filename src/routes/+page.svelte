@@ -18,7 +18,7 @@
 	let selectedIndex = 0;
 </script>
 
-<section id="hero" class="container mx-auto flex flex-col items-center gap-y-2 py-20">
+<section id="about" class="container mx-auto flex flex-col items-center gap-y-2 py-20">
 	<Button href="https://dcitizens.eu" target="_blank" variant="secondary" size="sm">
 		Made by DCitizens
 		<ExternalLink class="ml-2 h-4 w-4" />
