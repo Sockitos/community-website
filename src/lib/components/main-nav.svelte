@@ -3,7 +3,7 @@
 	import { cn } from '@/utils';
 </script>
 
-<nav class="flex flex-row items-center gap-4 text-sm lg:gap-6">
+<nav class="hidden flex-row items-center gap-4 text-sm md:flex lg:gap-6">
 	<a
 		class={cn(
 			'transition-colors hover:text-foreground/80',
