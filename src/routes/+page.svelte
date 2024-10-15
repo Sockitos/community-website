@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import SectionDescription from '@/components/section-description.svelte';
 	import SectionTitle from '@/components/section-title.svelte';
 	import Badge from '@/components/ui/badge/badge.svelte';
@@ -75,7 +76,7 @@
 		</p>
 		<div class="mt-2 aspect-video overflow-hidden rounded-xl border bg-background shadow-xl">
 			<img
-				src={features[selectedIndex].screenshot}
+				src={`${base}${features[selectedIndex].screenshot}`}
 				alt={features[selectedIndex].title}
 				class="h-full w-full object-cover"
 			/>
