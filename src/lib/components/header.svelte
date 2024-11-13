@@ -12,10 +12,10 @@
 >
 	<div class="container flex h-14 flex-row items-center gap-x-4">
 		<MobileNav />
-		<a href="{base}/" class="mr-auto font-bold">Community</a>
+		<a href="{base}/" class="mr-auto font-bold">DCommunity</a>
 		<MainNav />
 		<div class="flex flex-row items-center">
-			<Button variant="ghost" size="icon-sm">
+			<Button href="https://github.com/Sockitos/community" variant="ghost" size="icon-sm">
 				<Github class="h-4 w-4" />
 			</Button>
 			<ModeToggle />

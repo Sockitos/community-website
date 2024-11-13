@@ -21,7 +21,7 @@
 		</Button>
 	</Sheet.Trigger>
 	<Sheet.Content side="left" class="pr-0">
-		<a href="/" class="mr-6 text-lg font-bold"> Community </a>
+		<a href="/" class="mr-6 text-lg font-bold"> DCommunity </a>
 		<ScrollArea orientation="both" class="my-4 h-[calc(100vh-8rem)] pb-10">
 			<nav class="flex flex-col items-start gap-y-4 font-medium">
 				<a

@@ -24,18 +24,18 @@
 			Made by DCitizens
 			<ExternalLink class="ml-2 h-4 w-4" />
 		</Button>
-		<Section.Title tag="h1" class="md:text-6x text-5xl font-bold"
-			>Community<br />Platform</Section.Title
-		>
+		<Section.Title tag="h1" class="md:text-6x text-5xl font-bold">DCommunity</Section.Title>
 		<Section.Description>
 			A platform to enhance and connect communities. This work is a part of the DCitizens project
-			that focuses on empowering citizens with and through digital technologies.</Section.Description
-		>
+			that focuses on empowering citizens with and through digital technologies.
+		</Section.Description>
 	</Section.Header>
 	<Section.Content>
 		<div class="flex flex-row gap-x-4">
-			<Button size="sm">Get Started</Button>
-			<Button variant="outline" size="sm">Learn More</Button>
+			<Button href="https://forms.gle/WjfbJZErT5759TRi7" size="sm">Request Platform</Button>
+			<Button href="https://github.com/Sockitos/community" variant="outline" size="sm">
+				Learn More
+			</Button>
 		</div>
 	</Section.Content>
 </Section.Root>
@@ -72,7 +72,7 @@
 					</button>
 				{/each}
 			</div>
-			<Button variant="ghost" size="sm">
+			<Button href="https://forms.gle/SYnrYP7rfZCXuaTAA" variant="ghost" size="sm">
 				Suggest a feature
 				<ArrowRight class="ml-1 h-4 w-4" />
 			</Button>
