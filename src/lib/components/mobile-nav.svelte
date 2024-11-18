@@ -26,28 +26,28 @@
 				<a
 					href="#features"
 					on:click={handleClick}
-					class={cn('text-foreground/60 transition-colors hover:text-foreground/80')}
+					class={cn('text-foreground/60 transition-colors hover:text-foreground')}
 				>
 					Features
 				</a>
 				<a
 					href="#roadmap"
 					on:click={handleClick}
-					class={cn('text-foreground/60 transition-colors hover:text-foreground/80')}
+					class={cn('text-foreground/60 transition-colors hover:text-foreground')}
 				>
 					Roadmap
 				</a>
 				<a
 					href="#get-started"
 					on:click={handleClick}
-					class={cn('text-foreground/60 transition-colors hover:text-foreground/80')}
+					class={cn('text-foreground/60 transition-colors hover:text-foreground')}
 				>
 					Get Started
 				</a>
 				<a
 					href="#contact"
 					on:click={handleClick}
-					class={cn('text-foreground/60 transition-colors hover:text-foreground/80')}
+					class={cn('text-foreground/60 transition-colors hover:text-foreground')}
 				>
 					Contacts
 				</a>
