@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { beforeNavigate } from '$app/navigation';
 	import { cn } from '@/utils';
 	import { Menu } from 'lucide-svelte';
 	import { Button } from './ui/button';
@@ -8,9 +7,9 @@
 
 	let open = false;
 
-	beforeNavigate(() => {
+	function handleClick() {
 		open = false;
-	});
+	}
 </script>
 
 <Sheet.Root bind:open>
@@ -26,24 +25,28 @@
 			<nav class="flex flex-col items-start gap-y-4 font-medium">
 				<a
 					href="#features"
+					on:click={handleClick}
 					class={cn('text-foreground/60 transition-colors hover:text-foreground/80')}
 				>
 					Features
 				</a>
 				<a
 					href="#roadmap"
+					on:click={handleClick}
 					class={cn('text-foreground/60 transition-colors hover:text-foreground/80')}
 				>
 					Roadmap
 				</a>
 				<a
 					href="#get-started"
+					on:click={handleClick}
 					class={cn('text-foreground/60 transition-colors hover:text-foreground/80')}
 				>
 					Get Started
 				</a>
 				<a
 					href="#contact"
+					on:click={handleClick}
 					class={cn('text-foreground/60 transition-colors hover:text-foreground/80')}
 				>
 					Contacts
