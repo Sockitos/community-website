@@ -49,7 +49,7 @@
 	</Section.Header>
 	<Section.Content>
 		<div class="flex w-full flex-row items-center justify-between">
-			<div class="flex flex-row gap-x-4">
+			<div class="flex flex-wrap gap-x-4">
 				{#each features as feature, index (index)}
 					{@const isActive = selectedIndex === index}
 					<button
@@ -72,14 +72,20 @@
 					</button>
 				{/each}
 			</div>
-			<Button href="https://forms.gle/SYnrYP7rfZCXuaTAA" target="_blank" variant="ghost" size="sm">
+			<Button
+				href="https://forms.gle/SYnrYP7rfZCXuaTAA"
+				target="_blank"
+				variant="ghost"
+				size="sm"
+				class="hidden md:flex"
+			>
 				Suggest a feature
 				<ArrowRight class="ml-1 h-4 w-4" />
 			</Button>
 		</div>
 		<div class="flex w-full flex-col">
-			<h3 class="text-xl font-semibold">{features[selectedIndex].title}</h3>
-			<p class="max-w-xl text-balance text-muted-foreground">
+			<h3 class="text-lg font-semibold md:text-xl">{features[selectedIndex].title}</h3>
+			<p class="max-w-xl text-balance text-sm text-muted-foreground md:text-base">
 				{features[selectedIndex].description}
 			</p>
 			<div class="mt-2 aspect-video overflow-hidden rounded-xl border bg-background shadow-xl">
@@ -90,6 +96,16 @@
 				/>
 			</div>
 		</div>
+		<Button
+			href="https://forms.gle/SYnrYP7rfZCXuaTAA"
+			target="_blank"
+			variant="ghost"
+			size="sm"
+			class="self-start md:hidden"
+		>
+			Suggest a feature
+			<ArrowRight class="ml-1 h-4 w-4" />
+		</Button>
 	</Section.Content>
 </Section.Root>
 <Section.Root id="roadmap">
@@ -100,19 +116,21 @@
 	<Section.Content>
 		<Section.Content>
 			{#each roadmap as feature}
-				<div class="flex w-full max-w-3xl gap-x-8">
+				<div class="flex w-full max-w-3xl gap-x-4 md:gap-x-8">
 					<div class="flex flex-col items-center">
-						<div class="mt-1 h-5 w-5 shrink-0 rounded-full bg-primary"></div>
+						<div
+							class="mt-1.5 h-4 w-4 shrink-0 rounded-full bg-primary md:mt-1 md:h-5 md:w-5"
+						></div>
 						<Separator orientation="vertical" />
 					</div>
 					<div class="mb-4 flex w-full flex-1 flex-col items-start">
-						<div class="flex w-full items-center justify-between gap-x-4">
-							<p class="text-xl font-semibold">
+						<div class="flex w-full flex-row items-center justify-between gap-x-4">
+							<p class="text-lg font-semibold md:text-xl">
 								{feature.title}
 							</p>
 							<Badge variant="secondary">{feature.eta}</Badge>
 						</div>
-						<p class="max-w-xl text-balance text-muted-foreground">
+						<p class="max-w-xl text-balance text-sm text-muted-foreground md:text-base">
 							{feature.description}
 						</p>
 						<Badge variant="outline" class="mt-2">{feature.status}</Badge>
