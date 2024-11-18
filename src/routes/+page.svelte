@@ -49,7 +49,7 @@
 	</Section.Header>
 	<Section.Content>
 		<div class="flex w-full flex-row items-center justify-between">
-			<div class="flex flex-wrap gap-x-4">
+			<div class="flex flex-wrap gap-x-2 gap-y-1">
 				{#each features as feature, index (index)}
 					{@const isActive = selectedIndex === index}
 					<button
