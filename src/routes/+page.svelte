@@ -18,7 +18,7 @@
 	let selectedIndex = 0;
 </script>
 
-<Section.Root id="about">
+<Section.Root id="hero">
 	<Section.Header>
 		<Button href="https://dcitizens.eu" target="_blank" variant="secondary" size="sm">
 			Made by DCitizens
@@ -32,7 +32,7 @@
 	</Section.Header>
 	<Section.Content>
 		<div class="flex flex-row gap-x-4">
-			<Button href="https://forms.gle/WjfbJZErT5759TRi7" size="sm">Request Platform</Button>
+			<Button href="#get-started" size="sm">Get Started</Button>
 			<Button href="https://github.com/Sockitos/community" variant="outline" size="sm">
 				Learn More
 			</Button>
@@ -72,7 +72,7 @@
 					</button>
 				{/each}
 			</div>
-			<Button href="https://forms.gle/SYnrYP7rfZCXuaTAA" variant="ghost" size="sm">
+			<Button href="https://forms.gle/SYnrYP7rfZCXuaTAA" target="_blank" variant="ghost" size="sm">
 				Suggest a feature
 				<ArrowRight class="ml-1 h-4 w-4" />
 			</Button>
@@ -120,6 +120,47 @@
 				</div>
 			{/each}
 		</Section.Content>
+	</Section.Content>
+</Section.Root>
+<Section.Root id="get-started">
+	<Section.Header>
+		<Section.Title>Get Started</Section.Title>
+		<Section.Description>
+			Ready to start using DCommunity? Choose how you want to get started
+		</Section.Description>
+	</Section.Header>
+	<Section.Content
+		><p class="max-w-xs text-balance text-center text-sm text-muted-foreground">
+			Contact us to request the platform to be hosted on our servers.
+		</p>
+		<div class="flex flex-col items-center gap-y-2">
+			<Button
+				href="https://forms.gle/WjfbJZErT5759TRi7"
+				target="_blank"
+				variant="outline"
+				size="sm"
+			>
+				Request Hosting
+			</Button>
+		</div>
+		<div class="flex flex-row items-center justify-center gap-x-2">
+			<Separator class="max-w-64" />
+			<span class="text-sm text-muted-foreground">OR</span>
+			<Separator class="max-w-64" />
+		</div>
+		<div class="flex flex-col items-center gap-y-2">
+			<Button
+				href="https://github.com/Sockitos/community"
+				target="_blank"
+				variant="outline"
+				size="sm"
+			>
+				Host Yourself
+			</Button>
+			<p class="max-w-xs text-balance text-center text-sm text-muted-foreground">
+				Check our documentation and host your own instance of the platform.
+			</p>
+		</div>
 	</Section.Content>
 </Section.Root>
 <Section.Root id="contact">

@@ -25,25 +25,25 @@
 		<ScrollArea orientation="both" class="my-4 h-[calc(100vh-8rem)] pb-10">
 			<nav class="flex flex-col items-start gap-y-4 font-medium">
 				<a
-					href="#about"
-					class={cn('text-foreground/60 transition-colors hover:text-foreground/80')}
-				>
-					About
-				</a>
-				<a
-					href="#about"
+					href="#features"
 					class={cn('text-foreground/60 transition-colors hover:text-foreground/80')}
 				>
 					Features
 				</a>
 				<a
-					href="#about"
+					href="#roadmap"
 					class={cn('text-foreground/60 transition-colors hover:text-foreground/80')}
 				>
 					Roadmap
 				</a>
 				<a
-					href="#about"
+					href="#get-started"
+					class={cn('text-foreground/60 transition-colors hover:text-foreground/80')}
+				>
+					Get Started
+				</a>
+				<a
+					href="#contact"
 					class={cn('text-foreground/60 transition-colors hover:text-foreground/80')}
 				>
 					Contacts

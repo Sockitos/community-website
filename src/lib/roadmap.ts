@@ -3,30 +3,20 @@ import type { PlannedFeature } from './types';
 export const roadmap: PlannedFeature[] = [
 	{
 		title: 'Internationalization',
-		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+		description: 'This will allow users to change the language of the platform.',
 		status: 'In Progress',
-		eta: 'Q2 2024'
+		eta: 'Q1 2025'
 	},
 	{
-		title: 'Internationalization',
-		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-		status: 'In Progress',
-		eta: 'Q2 2024'
+		title: 'Users & Groups',
+		description: 'Users will be able to create groups and invite other users.',
+		status: 'Planned',
+		eta: 'Q2 2025'
 	},
 	{
-		title: 'Internationalization',
-		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-		status: 'In Progress',
-		eta: 'Q2 2024'
-	},
-	{
-		title: 'Internationalization',
-		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-		status: 'In Progress',
-		eta: 'Q2 2024'
+		title: 'Improve DYI',
+		description: 'Improve how users can deploy their own instance of the platform.',
+		status: 'Planned',
+		eta: 'Q3 2025'
 	}
 ];

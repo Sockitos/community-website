@@ -15,7 +15,12 @@
 		<a href="{base}/" class="mr-auto font-bold">DCommunity</a>
 		<MainNav />
 		<div class="flex flex-row items-center">
-			<Button href="https://github.com/Sockitos/community" variant="ghost" size="icon-sm">
+			<Button
+				href="https://github.com/Sockitos/community"
+				target="_blank"
+				variant="ghost"
+				size="icon-sm"
+			>
 				<Github class="h-4 w-4" />
 			</Button>
 			<ModeToggle />

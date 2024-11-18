@@ -5,6 +5,6 @@
 </script>
 
 <div class="flex h-40 flex-col items-center justify-between border border-t py-6">
-	<a href="{base}/" class="font-bold">Community</a>
-	<p>© {year} Community</p>
+	<a href="{base}/" class="font-bold">DCommunity</a>
+	<p>© {year} DCommunity</p>
 </div>

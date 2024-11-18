@@ -20,5 +20,15 @@ export const features: Feature[] = [
 		title: 'Map',
 		description: 'Explore the community on a map',
 		screenshot: '/images/placeholder.svg'
+	},
+	{
+		title: 'Moderation',
+		description: 'Moderate the users and content of the community',
+		screenshot: '/images/placeholder.svg'
+	},
+	{
+		title: 'Customization',
+		description: 'Customize the platform to your liking',
+		screenshot: '/images/placeholder.svg'
 	}
 ];
