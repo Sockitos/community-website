@@ -1,6 +1,6 @@
 <script lang="ts">
-	import { base } from '$app/paths';
 	import * as Section from '@/components/section';
+	import Slideshow from '@/components/slideshow.svelte';
 	import Badge from '@/components/ui/badge/badge.svelte';
 	import { Button } from '@/components/ui/button';
 	import Separator from '@/components/ui/separator/separator.svelte';
@@ -10,7 +10,6 @@
 	import { ArrowRight, ExternalLink, Mail } from 'lucide-svelte';
 	import { cubicInOut } from 'svelte/easing';
 	import { crossfade } from 'svelte/transition';
-
 	const [send, receive] = crossfade({
 		duration: 250,
 		easing: cubicInOut
@@ -89,10 +88,9 @@
 				{features[selectedIndex].description}
 			</p>
 			<div class="mt-2 aspect-video overflow-hidden rounded-xl border bg-background shadow-xl">
-				<img
-					src={`${base}${features[selectedIndex].screenshot}`}
+				<Slideshow
+					images={features[selectedIndex].screenshots}
 					alt={features[selectedIndex].title}
-					class="h-full w-full object-cover"
 				/>
 			</div>
 		</div>

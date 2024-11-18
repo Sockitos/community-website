@@ -1,7 +1,7 @@
 export type Feature = {
 	title: string;
 	description: string;
-	screenshot: string;
+	screenshots: string[];
 };
 
 export type PlannedFeature = {
